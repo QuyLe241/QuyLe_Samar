@@ -43,7 +43,7 @@
     />
 
     <!--    carousel    -->
-    <link rel="stylesheet" href="./css/owlcarousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <!--  ---  -->
 
@@ -488,13 +488,13 @@
       </div>
     </section>
     <section class="blog section-inner">
-      <div class="container">
+      <div class="container container_blog">
         <div class="title">
           <p>Our Blog</p>
           <h2>Latest News & Blog</h2>
         </div>
         <div class="blog__content">
-          <div class="owl-carousel owl-theme">
+          <div class="owl-carousel owl-theme owl-loaded">
             <div class="blog__item">
               <div class="blog__header">
                 <img src="./img/pic1_1.jpg" alt="" />
@@ -567,6 +567,12 @@
                 </p>
               </div>
             </div>
+            <!-- <div class="owl-nav"></div>
+              <div class="owl-prev">></div>
+              <div class="owl-next"><</div>
+            </div> -->
+            <!-- <div class="owl-prev owl-rtl">prev</div>
+            <div class="owl-next">next</div> -->
           </div>
         </div>
       </div>
@@ -820,6 +826,8 @@
         loop: true,
         margin: 30,
         nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
         responsive: {
           0: {
             items: 1,
