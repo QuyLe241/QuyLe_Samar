@@ -7,6 +7,14 @@
     <link rel="shortcut icon" href="./img/logo-samar.png" type="image/x-icon" />
     <title>Samar LN-Quý</title>
 
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,59 +71,82 @@
 
   <body>
     <header>
-      <div class="container">
-        <div class="header__content">
-          <a href="#">
-            <img src="./img/logo-2.png" alt="" />
-          </a>
-          <nav>
-            <ul>
-              <li>
-                <a href="#">
-                  <span>home</span>
-                  <!-- <i class="fa fa-chevron-down"></i> -->
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100087758182600"
-                  target="_blank"
-                >
-                  <span>Page</span>
-                  <!-- <i class="fa fa-chevron-down"></i> -->
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>services</span>
-                  <i class="fa fa-chevron-down"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>post layout</span>
-                  <i class="fa fa-chevron-down"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>blog</span>
-                  <i class="fa fa-chevron-down"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>contact us</span>
-                  <i class="fa fa-chevron-down"></i>
-                </a>
-              </li>
-            </ul>
-            <div>
-              <button class="btn-gradient">Get A Quote</button>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="header__content">
+            <a class="navbar-brand" href="#">
+              <img src="./img/logo-2.png" alt="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span>home</span>
+                      <!-- <i class="fa fa-chevron-down"></i> -->
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://www.facebook.com/profile.php?id=100087758182600"
+                      target="_blank"
+                    >
+                      <span>Page</span>
+                      <!-- <i class="fa fa-chevron-down"></i> -->
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span>services</span>
+                      <i class="fa fa-chevron-down"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span>post layout</span>
+                      <i class="fa fa-chevron-down"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span>blog</span>
+                      <i class="fa fa-chevron-down"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span>contact us</span>
+                      <i class="fa fa-chevron-down"></i>
+                    </a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <div class="">
+                        <button class="btn-gradient">Get A Quote</button>
+                      </div>
+                    </a>
+                  </li> -->
+                </ul>
+              </div>
+              <div>
+                <button class="btn-gradient">Get A Quote</button>
+              </div>
+            </nav>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
     <section class="saCarousel">
       <div class="container">
@@ -866,6 +897,19 @@
     <script>
       $(".counter").countUp();
     </script>
+
+    <!--  boots -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
 
     <!--      Back to top      -->
     <script src="./js/back-to-top-master/assets/js/main.js"></script>
